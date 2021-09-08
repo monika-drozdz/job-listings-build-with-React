@@ -1,6 +1,6 @@
 # Frontend Mentor - Job listings with filtering solution with React and SASS
 
-This is a solution to the [Job listings with filtering challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt). 
+This is a solution to the [Job listings with filtering challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -18,7 +18,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
-
 ## Overview
 
 ### The challenge
@@ -35,14 +34,15 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/monika-drozdz/Job-listings-with-filtering-solution-built-with-React-and-SASS](https://github.com/monika-drozdz/Job-listings-with-filtering-solution-built-with-React-and-SASS)
+- Solution URL: [https://github.com/monika-drozdz/job-listings-build-with-React](https://github.com/monika-drozdz/job-listings-build-with-React)
+- Live Site URL: [https://monika-drozdz.github.io/job-listings-build-with-React/](https://monika-drozdz.github.io/job-listings-build-with-React/)
 
 ### Prerequisites
 
 An adequate version of Node.js is installed. Here's the adequate version I use:
 
 `$ node --version`
-`v10.16.0`
+`v12.1.0`
 
 An adequate version of npm is installed. Here's the adequate version I use:
 
@@ -53,15 +53,15 @@ An adequate version of npm is installed. Here's the adequate version I use:
 
 Installation:
 
-`npm install`  
+`npm install`
 
-To Run Test Suite:  
+To Run Test Suite:
 
-`npm test`  
+`npm test`
 
 To Start Server:
 
-`npm start`  
+`npm start`
 
 To Visit App:
 
@@ -83,34 +83,32 @@ Usage of @mixin and @include at-rules in order to re-use chunks of styles:
 
 ```scss
 @mixin flex($direction, $justify, $align) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: $align;
+	display: flex;
+	flex-direction: $direction;
+	justify-content: $justify;
+	align-items: $align;
 }
 ```
+
 Usage of built-in Hooks in React such as useState() and useEffect():
 
 ```js
-function App () {
-  const [jobs, setJobs] = useState([]);
-  const [filters, setFilters] = useState([]);
+function App() {
+	const [jobs, setJobs] = useState([]);
+	const [filters, setFilters] = useState([]);
 
-  useEffect(() => {
-      setJobs(data); 
-    }, []
-  );
+	useEffect(() => {
+		setJobs(data);
+	}, []);
 }
 ```
 
 ### Useful resources
 
-- [React documentation](https://reactjs.org/) 
-- [Sass documentation](https://sass-lang.com/documentation) 
+- [React documentation](https://reactjs.org/)
+- [Sass documentation](https://sass-lang.com/documentation)
 
 ## Author
 
 - GitHub - [@monika-drozdz](https://github.com/monika-drozdz)
 - Frontend Mentor - [@monika-drozdz](https://www.frontendmentor.io/profile/monika-drozdz)
-
-
