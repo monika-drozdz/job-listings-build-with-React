@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/job-listings-build-with-React/static/css/main.e029d155.chunk.css",
+    "main.js": "/job-listings-build-with-React/static/js/main.a4cb52d3.chunk.js",
+    "main.js.map": "/job-listings-build-with-React/static/js/main.a4cb52d3.chunk.js.map",
+    "runtime-main.js": "/job-listings-build-with-React/static/js/runtime-main.8e5d8347.js",
+    "runtime-main.js.map": "/job-listings-build-with-React/static/js/runtime-main.8e5d8347.js.map",
+    "static/js/2.a5ced1ba.chunk.js": "/job-listings-build-with-React/static/js/2.a5ced1ba.chunk.js",
+    "static/js/2.a5ced1ba.chunk.js.map": "/job-listings-build-with-React/static/js/2.a5ced1ba.chunk.js.map",
+    "static/js/3.0e9c0df1.chunk.js": "/job-listings-build-with-React/static/js/3.0e9c0df1.chunk.js",
+    "static/js/3.0e9c0df1.chunk.js.map": "/job-listings-build-with-React/static/js/3.0e9c0df1.chunk.js.map",
+    "index.html": "/job-listings-build-with-React/index.html",
+    "static/css/main.e029d155.chunk.css.map": "/job-listings-build-with-React/static/css/main.e029d155.chunk.css.map",
+    "static/js/2.a5ced1ba.chunk.js.LICENSE.txt": "/job-listings-build-with-React/static/js/2.a5ced1ba.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/job-listings-build-with-React/static/media/bg-header-mobile.9cb13612.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8e5d8347.js",
+    "static/js/2.a5ced1ba.chunk.js",
+    "static/css/main.e029d155.chunk.css",
+    "static/js/main.a4cb52d3.chunk.js"
+  ]
+}
