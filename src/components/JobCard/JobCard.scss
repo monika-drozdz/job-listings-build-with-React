@@ -1,0 +1,117 @@
+@import 'src/styles/variables';
+
+.job-card {
+    width: 100%;
+    padding: 1.5em;
+    background: white;
+    margin: 1em 0 4em 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    border-radius: 5px;
+    
+    &.featured-card {
+        border-left: .5em solid $des-dk-cyan;
+    }
+}
+
+.chips {
+    border-radius: 1.5em;
+    color: $lh-gr-cyan-tablets;
+    padding: .5em;
+    font-size: 11px;
+    margin-right: 1em;
+    padding: .6em;
+
+    &.is-new {
+        background-color: $des-dk-cyan;
+    }
+    &.is-featured {
+        background-color: $vdk-gr-cyan;
+    }
+}
+
+.company-logo {
+    display: flex;
+    align-items: center;
+    margin-top: -5em;
+    transform: scale(.7);
+    transform-origin: center left;
+}
+
+.job-description {
+    @include flex(column, flex-start, flex-start);
+    border-bottom: 1px solid $dk-gr-cyan;
+    padding-bottom: .5em;
+    margin: .5em;
+}
+
+.job-preview {
+    @include flex(column, center, flex-start);
+    
+    & > * {
+        padding: .5em 0;
+    }
+
+    .company-name {
+        color: $des-dk-cyan;
+        font-weight: 700;
+        display: inline-block;
+        margin-right: 1em;
+    }
+
+    .position {
+        color: $vdk-gr-cyan;
+        font-weight: 700;
+        &:hover {
+            cursor: pointer;
+            color: $des-dk-cyan;
+        }
+    }
+
+    .additional-info {
+        color: $dk-gr-cyan;
+        font-size: .8em;
+        
+        .dot {
+            padding: 0 .8em;
+        }
+        
+    }
+
+}
+
+.tags-container {
+    @include flex(row, flex-start, center);
+    flex-wrap: wrap;
+}
+
+@media (min-width: 64em) {
+    
+    .job-card {
+        flex-direction: row;
+        margin: 1em 0;
+    }
+
+    .company-logo {
+        margin: 0 2em;
+        padding: 0;
+        transform: scale(1);
+    }
+
+    .job-description {
+        width: 50%;
+        flex-direction: row;
+        align-items: center;
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .tags-container {
+        width: 50%;
+        justify-content: flex-end;
+    }
+    
+}
+

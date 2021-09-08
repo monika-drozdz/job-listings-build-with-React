@@ -1,0 +1,71 @@
+@import 'src/styles/variables';
+
+.filtered-card {
+    @include flex(row, space-between, center);
+}
+
+.filtered-tags-container {
+    @include flex(row, flex-start, center);
+    flex-wrap: wrap;
+    border-radius: 5px;
+}
+
+.filter-button {
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-family: inherit;
+    font-weight: 700;
+    color: $des-dk-cyan;
+    margin: 1em .5em;
+    
+    .filter-tag {
+        padding: .8em;
+        background: $lh-gr-cyan-tablets;
+        border-radius: 5px 0 0 5px;   
+    }
+    
+    .clear-icon {
+        background: $des-dk-cyan;
+        color: $lh-gr-cyan-tablets;
+        padding: .8em;
+        transition: .3s;
+        border-radius: 0 5px 5px 0;
+        
+        &:hover {
+            background: $vdk-gr-cyan;
+            cursor: pointer;
+        }
+    }
+}
+
+.clear-btn {
+    color: $dk-gr-cyan;
+    font-weight: 700;
+    position: relative;
+    height: 1em;
+    margin: 0 .5em;
+
+    &:after {    
+        background: none repeat scroll 0 0 transparent;
+        bottom: -4px;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: $des-dk-cyan;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+      }
+      &:hover:after { 
+        width: 100%; 
+        left: 0; 
+      }
+
+      &:hover {
+        color: $des-dk-cyan;
+        cursor: pointer;
+    }
+}

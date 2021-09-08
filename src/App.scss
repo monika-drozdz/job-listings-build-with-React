@@ -1,0 +1,79 @@
+@import '/src/styles/variables';
+
+.App {
+  background-color: $lh-gr-cyan-bg;
+  min-height: 100vh;
+  width: 100%;
+  @include flex(column, flex-start, center);
+}
+
+.App-header {
+  background-image: url("/assets/bg-header-mobile.svg");
+  background-size: cover;
+  background-color: $des-dk-cyan;
+  width: 100%;
+  height: 10em;
+  margin: 0 auto;
+}
+
+.preview {
+  width: 85%;
+  height: auto;
+  margin-top: 4em;
+
+  .filter-card {
+    margin-top: -8em;
+  }
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    color: $dk-gr-cyan;
+    padding: 2em 6em;
+    font-size: .8em;
+    line-height: 2;
+    margin-bottom: 2em;
+    
+    a {
+       text-decoration: none;
+       color: inherit;
+       font-weight: 600;
+       position: relative;
+       transition: .5s;
+
+       &:hover {
+        color: $des-dk-cyan;
+       }
+
+       &:after {
+        content: "";
+        position: absolute;
+        bottom: -0.4em;
+        height: .2em;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        width: 40%;
+        background: $dk-gr-cyan;
+        transition: .5s;
+       }
+
+       &:hover:after {
+        width: 100%;
+        background: $des-dk-cyan;
+       }
+    }
+}
+
+@media (min-width: 30em) {
+
+.App-header {
+  background-image: url("/assets/bg-header-desktop.svg");
+  }
+
+footer {
+  padding: .8em;
+  font-size: .8em;
+    }
+}

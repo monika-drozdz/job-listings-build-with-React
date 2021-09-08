@@ -1,0 +1,12 @@
+$des-dk-cyan: hsl(180, 29%, 50%);
+$lh-gr-cyan-bg: hsl(180, 52%, 96%);
+$lh-gr-cyan-tablets: hsl(180, 31%, 95%);
+$dk-gr-cyan: hsl(180, 8%, 52%);
+$vdk-gr-cyan: hsl(180, 14%, 20%);
+
+@mixin flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}

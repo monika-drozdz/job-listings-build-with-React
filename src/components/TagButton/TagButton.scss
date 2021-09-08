@@ -1,0 +1,21 @@
+@import 'src/styles/variables';
+
+.tag {
+    text-decoration: none;
+    background: $lh-gr-cyan-tablets;
+    padding: .8em;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-family: inherit;
+    font-weight: 700;
+    color: $des-dk-cyan;
+    margin: .5em;
+    transition: .3s;
+
+    &:hover {
+        background: $des-dk-cyan;
+        color: $lh-gr-cyan-bg;
+        cursor: pointer;
+    }
+}
